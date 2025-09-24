@@ -84,5 +84,22 @@ def a_14():
     cursor.execute(query)
     return cursor.fetchall()
 
+def print_answers():
+    print(f"Question A.1: {a_1()}")
+    print(f"Question A.2: {a_2()}")
+    print(f"Question A.3: {a_3()}")
+    print(f"Question A.4: {a_4()}")
+    print(f"Question A.5: {a_5()}")
+    print(f"Question A.6: {a_6()}")
+    print(f"Question A.7: {a_7()}")
+    print(f"Question A.8: {a_8()}")
+    print(f"Question A.9: {a_9()}")
+    print(f"Question A.10: {a_10()}")
+    print(f"Question A.11: {a_11()}")
+    print(f"Question A.12: {a_12()}")
+    print(f"Question A.13: {a_13()}")
+    print(f"Question A.14: {a_14()}")
+
 if __name__ == '__main__':
     setup()
+    print_answers()

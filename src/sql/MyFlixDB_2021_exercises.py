@@ -28,12 +28,15 @@ def b_3():
     return cursor.fetchall()
 
 def b_4():
-    sql = 'select m1.full_names as member, m2.full_names as referred_by from members m1 join members m2 on m1.referred_by = m2.membership_number'
+    sql = ('select m1.full_names as member, m2.full_names as referred_by from members m1 '
+           'join members m2 on m1.referred_by = m2.membership_number')
     cursor.execute(sql)
     return cursor.fetchall()
 
 def b_5():
-    sql = 'select m.full_names, mov.title from members m join movierentals movr on m.membership_number = movr.membership_number join movies mov on movr.movie_id = mov.movie_id'
+    sql = ('select m.full_names, mov.title from members m '
+           'join movierentals movr on m.membership_number = movr.membership_number '
+           'join movies mov on movr.movie_id = mov.movie_id')
     cursor.execute(sql)
     return cursor.fetchall()
 
