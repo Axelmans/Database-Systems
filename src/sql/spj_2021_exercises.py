@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('../../database.db')
+conn = sqlite3.connect('spj_2021.db')
 cursor = conn.cursor()
 
 def reset():
@@ -85,18 +85,4 @@ def a_14():
     return cursor.fetchall()
 
 if __name__ == '__main__':
-    reset()
-    print("Question A.2: " + str(a_2()))
-    print("Question A.3: " + str(a_3()))
-    print("Question A.4: " + str(a_4()))
-    print("Question A.5: " + str(a_5()))
-    print("Question A.6: " + str(a_6()))
-    print("Question A.7: " + str(a_7()))
-    print("Question A.8: " + str(a_8()))
-    print("Question A.9: " + str(a_9()))
-    print("Question A.10: " + str(a_10()))
-    print("Question A.11: " + str(a_11()))
-    print("Question A.12: " + str(a_12()))
-    print("Question A.13: " + str(a_13()))
-    print("Question A.14: " + str(a_14()))
     setup()
